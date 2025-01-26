@@ -200,37 +200,29 @@ a. Judul "Hello World" berubah warna menjadi oranye. Lalu paragraf "Adam was her
 
 b. Dalam latihan ini, penulisan CSS menggunakan Embedded Style Sheet atau Internal CSS.
 
-c. Berikut langkah - langkah untuk menggunakan Linked Style Sheet (Eksternal CSS).
-
-1. Buat file CSS terpisah, misalnya `styles.css`, dengan isi sebagai berikut:
-
- ```
-        h1 {
-    color: orange;
-    text-align: center;
-}
-p {
-    font-family: "Times New Roman";
-    font-size: 40px;
-}
-```
-
-2. Modifikasi file `Lat2_2_NIM.php`
+<h4>Lat2_7_3123210696.php</h4>
 
 ```
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Hello World</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
+<html>
+
 <body>
-    <h1>Hello World</h1>
-    <p>
-    Adam was here guys ^^
-    </p>
+
+    <h1>Operasi JS</h1>
+
+    <p id="demo"></p>
+
+    <script>
+        var x = 5;
+        var y = 2;
+        var z = x + y;
+        document.getElementById("demo").innerHTML = z;
+    </script>
 </body>
+
 </html>
 ```
 
+Jalankan kode dan amati apa yang terjadi ? Apa guna dari baris 13 ?
+
+Baris 13 adalah inti dari script karena Menghubungkan hasil operasi JavaScript dengan elemen HTML dan Menampilkan hasil (`z`) langsung di halaman web untuk dilihat oleh pengguna.
