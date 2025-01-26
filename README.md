@@ -129,3 +129,67 @@ Alur pengiriman data dari form:
 
 3. Penerimaan Data di `proses02.php`: File `proses02.php` membaca data POST. Kondisi `if (isset($_POST['Input']))` akan true karena tombol `Input` ada. Nilai `$_POST['nama']` diambil dan ditampilkan sebagai output.
 
+<h4>Latihan 5</h4>
+
+Rubah kembali code pada file Lat2_4 dengan cara menghapus tulisan required pada baris 2 !
+Jalankan code dan kosongi data input kemudian tekan tombol Input, apa yang terjadi ? Jelaskan
+apa fungsi dari kode required ?
+
+Setelah menghapus atribut `required`, kode menjadi:
+
+```
+<FORM ACTION="proses02.php" METHOD="POST" NAME="input">
+    Nama Anda: <input type="text" name="nama">
+    <br>
+    <input type="submit" name="Input" value="Kirim">
+</FORM>
+```
+
+Ketika tombol "input" ditekan tanpa mengisi data: Form tetap dikirim ke `proses02.php`. Nilai `$_POST['nama']` di `proses02.php` akan kosong `("")`.
+Output di browser akan menjadi seperti ini
+
+```
+Nama Anda : <b></b>
+```
+
+Jadi Atribut required adalah fitur yang digunakan pada elemen input untuk memastikan bahwa pengguna mengisi input sebelum dapat mengirimkan form.
+
+<h4>Memodifikasi file Lat2_2_3123210696.php</h4>
+
+Modifikasi code dalam file Lat2_2_NIM.php hingga seperti ini !
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hello World</title>
+    <style type="text/css">
+        h1 {
+            color: orange;
+            text-align: center;
+        }
+
+        p {
+            font-family: "Times New Roman";
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello World</h1>
+    <p>
+        Adam was here guys ^^
+    </p>
+</body>
+
+</html>
+```
+
+a. Jalankan kode Lat2_2, dan kemudian amati yang terjadi ! Apakah ada perbedaan daripada sebelumnya ? Berilah penjelasan kenapa itu bisa terjadi ?
+
+b. Menurut kalian dalam latihan 6 ini cara penulisan CSS apa yang dipakai ?
+
+c. Rubahlah cara penulisan CSS ini dalam tipe linked style sheet !
