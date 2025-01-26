@@ -193,3 +193,25 @@ a. Jalankan kode Lat2_2, dan kemudian amati yang terjadi ! Apakah ada perbedaan 
 b. Menurut kalian dalam latihan 6 ini cara penulisan CSS apa yang dipakai ?
 
 c. Rubahlah cara penulisan CSS ini dalam tipe linked style sheet !
+
+Jawab:
+
+a. Judul "Hello World" berubah warna menjadi oranye. Lalu paragraf "Adam was here guys^^" menggunakan font Times New Roman dan ukurannya menjadi 40px, lebih besar dari sebelumnya
+
+b. Dalam latihan ini, penulisan CSS menggunakan Embedded Style Sheet atau Internal CSS.
+
+c. Berikut langkah - langkah untuk menggunakan Linked Style Sheet (Eksternal CSS).
+
+        1. Buat file CSS terpisah, misalnya `styles.css`, dengan isi sebagai berikut:
+
+        ```
+        h1 {
+    color: orange;
+    text-align: center;
+}
+p {
+    font-family: "Times New Roman";
+    font-size: 40px;
+}
+        ```
+
