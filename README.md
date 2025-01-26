@@ -202,7 +202,7 @@ b. Dalam latihan ini, penulisan CSS menggunakan Embedded Style Sheet atau Intern
 
 c. Berikut langkah - langkah untuk menggunakan Linked Style Sheet (Eksternal CSS).
 
-        1. Buat file CSS terpisah, misalnya `styles.css`, dengan isi sebagai berikut:
+1. Buat file CSS terpisah, misalnya `styles.css`, dengan isi sebagai berikut:
 
  ```
         h1 {
