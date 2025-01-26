@@ -73,3 +73,59 @@ Jawab:
 * Menjalankan dengan Server vs. Tanpa Server: Untuk HTML statis sederhana, tidak ada perbedaan dalam hasil visual karena server hanya menyediakan akses file.
 
 * Menghapus Tag Penutup `<h1>` maka Konten setelah `<h1>` mungkin akan salah dianggap sebagai bagian dari header.
+
+<h4>Lat2_3_312310696.php</h4>
+
+```
+<body>
+    <form action="proses.php" method="GET">
+        <input type="text" name="nama">
+        <input type=”submit” value=”Go”>
+    </form>
+</body>
+```
+
+Setelah menjalankan kode tersebut dengan method POST, maka gantikan dengan GET, lalulihatlah
+perbedaannya pada url di browser. Simpulkan!
+
+Jawab: 
+
+* Ketika form menggunakan `method="POST"`, URL di browser tidak akan menampilkan data yang dikirimkan.
+
+* Ketika form menggunakan `method="GET"`, data yang dimasukkan akan terlihat di URL.
+
+<h4>Lat2_4_3123210696.php</h4>
+
+<h6>Code Lat2_4_3123210696.php</h6>
+
+```
+<FORM ACTION="proses02.php" METHOD="POST" NAME="input">
+    Nama Anda : <input type="txt" name="nama">
+    </br>
+</FORM>
+</FORM>
+```
+
+<h6>Code Proses02.php</h6>
+
+```
+<?php
+if (isset($_POST['Input'])) {
+    $nama = $_POST['nama'];
+    echo "Nama Anda : <b>$nama</b>";
+}
+?>
+```
+
+Jalankan kode Lat2_4, kemudian isikan data input dan tekan tombol Input ! Apa yang terjadi ?
+Coba ulangi dengan mengosongkan data input dan amati apa yang terjadi ! Jelaskan alur
+pengiriman data dari form yang ada di file Lat2_2 dan file proses02 !
+
+Alur pengiriman data dari form:
+
+1. Pengisian Form: Pengguna mengisi data pada input `nama` di file `Lat_2_4_312310696.php`.
+
+2. Submit data: Ketika tombol Kirim ditekan, browser membuat HTTP request POST ke file `proses02.php`. Data dikirimkan dalam body request
+
+3. Penerimaan Data di `proses02.php`: File `proses02.php` membaca data POST. Kondisi `if (isset($_POST['Input']))` akan true karena tombol `Input` ada. Nilai `$_POST['nama']` diambil dan ditampilkan sebagai output.
+
