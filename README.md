@@ -226,3 +226,62 @@ b. Dalam latihan ini, penulisan CSS menggunakan Embedded Style Sheet atau Intern
 Jalankan kode dan amati apa yang terjadi ? Apa guna dari baris 13 ?
 
 Baris 13 adalah inti dari script karena Menghubungkan hasil operasi JavaScript dengan elemen HTML dan Menampilkan hasil (`z`) langsung di halaman web untuk dilihat oleh pengguna.
+
+<h4>Latihan 9</h4>
+
+Buatlah beberapa fungsi pemrograman sederhana dengan menggunakan javascript atas perintahdari
+asisten !
+Menghitung luas pakai javascript
+
+```
+<?php
+function luasPersegi($sisi)
+{
+    return $sisi * $sisi;
+}
+function luasPersegiPanjang($panjang, $lebar)
+{
+    return $panjang * $lebar;
+}
+function luasLingkaran($jariJari)
+{
+    return pi() * pow($jariJari, 2);
+}
+function luasSegitiga($alas, $tinggi)
+{
+    return 0.5 * $alas * $tinggi;
+}
+echo "Luas persegi dengan sisi 4: " . luasPersegi(4) . "\n"; // Output: 16
+echo "Luas persegi panjang dengan panjang 5 dan lebar 3: " . luasPersegiPanjang(5, 3) . "\n"; // Output: 15
+echo "Luas lingkaran dengan jari-jari 7: " . round(luasLingkaran(7), 2) . "\n"; // Output: 153.94
+echo "Luas segitiga dengan alas 6 dan tinggi 8: " . luasSegitiga(6, 8) . "\n"; // Output: 24
+?>
+```
+
+<h4>Latihan 10</h4>
+
+Modifikasilah kode pada Latihan 4 dengan menggunakan Javascript sehingga proses formvalidation
+dapat dilakukan dengan javascript !
+
+Hasil modifikasi kode pada Lat2_4_3123210696.php
+
+```
+<FORM ACTION="proses02.php" METHOD="POST" NAME="input" onsubmit="return validateForm()">
+    Nama Anda: <input type="text" name="nama" id="nama">
+    <br>
+    <input type="submit" name="Input" value="Kirim">
+</FORM>
+
+<script>
+function validateForm() {
+    var nama = document.getElementById("nama").value;
+    
+    if (nama == "") {
+        alert("Nama harus diisi!");
+        return false;  // Mencegah form dikirim jika kosong
+    }
+    
+    return true;
+}
+</script>
+```
