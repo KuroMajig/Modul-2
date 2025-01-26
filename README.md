@@ -204,7 +204,7 @@ c. Berikut langkah - langkah untuk menggunakan Linked Style Sheet (Eksternal CSS
 
         1. Buat file CSS terpisah, misalnya `styles.css`, dengan isi sebagai berikut:
 
-        ```
+ ```
         h1 {
     color: orange;
     text-align: center;
@@ -213,5 +213,5 @@ p {
     font-family: "Times New Roman";
     font-size: 40px;
 }
-        ```
+```
 
