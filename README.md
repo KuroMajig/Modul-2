@@ -22,8 +22,8 @@
 </html>
 ```
 
-Jalankan kode di atas tanpa menggunakan server, apa yang terjadi? Kemudian hapus tag <body>,
-Amati apa yang terjadi? Lalu simpulkan !
+# Jalankan kode di atas tanpa menggunakan server, apa yang terjadi? Kemudian hapus tag <body>,
+# Amati apa yang terjadi? Lalu simpulkan !
 
 Jawab: 
 
