@@ -1,6 +1,6 @@
 # Modul-2
 
-<h4>Lat2_1_312310696.php</h4>
+<h4>Lat2_1_312310696.html</h4>
 
 ```
 <!DOCTYPE html>
@@ -33,3 +33,43 @@ Jawab:
 
 * HTML adalah Fault Tolerant Browser dirancang untuk mentoleransi kesalahan kecil dalam kode HTML dan tetap menampilkan konten selama tidak ada kesalahan kritis.
 
+<h4>Lat2_2_312310696.php</h4>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hello World</title>
+    <style type="text/css">
+        h1 {
+            color: orange;
+            text-align: center;
+        }
+
+        p {
+            font-family: "Times New Roman";
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello World</h1>
+    <p>
+        Adam was here guys ^^
+    </p>
+</body>
+
+</html>
+```
+
+Jalankan kode di atas dengan menggunakan server. Apa yang terjadi? Apakah ada perbedaan dengan
+Lat2_1 ? Kemudian hapus tag </h1>, amati apa yang terjadi? Apakah ada perubahan dari
+sebelumnya ? Lalu simpulkan !
+
+Jawab: 
+* Menjalankan dengan Server vs. Tanpa Server: Untuk HTML statis sederhana, tidak ada perbedaan dalam hasil visual karena server hanya menyediakan akses file.
+
+* Menghapus Tag Penutup <h1> maka Konten setelah <h1> mungkin akan salah dianggap sebagai bagian dari header.
