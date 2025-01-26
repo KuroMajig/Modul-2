@@ -72,4 +72,4 @@ sebelumnya ? Lalu simpulkan !
 Jawab: 
 * Menjalankan dengan Server vs. Tanpa Server: Untuk HTML statis sederhana, tidak ada perbedaan dalam hasil visual karena server hanya menyediakan akses file.
 
-* Menghapus Tag Penutup "<h1>" maka Konten setelah "<h1>" mungkin akan salah dianggap sebagai bagian dari header.
+* Menghapus Tag Penutup `<h1>` maka Konten setelah `<h1>` mungkin akan salah dianggap sebagai bagian dari header.
